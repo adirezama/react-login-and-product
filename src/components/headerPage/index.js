@@ -8,7 +8,7 @@ import { isUserAuthenticated, deleteCookie } from '../../utils/cookie';
 const Header = () => {
   const listMenu = ['home', 'profile', 'contact', 'infoCorona'];
   const logoutClicked = () => {
-    if (window.confirm('Yakin mau logout?')) {
+    if (window.confirm('And yakin ?')) {
       deleteCookie('userData');
       deleteCookie('token');
       window.location.replace('/');
